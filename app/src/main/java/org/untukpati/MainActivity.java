@@ -2,11 +2,16 @@ package org.untukpati;
 
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import org.untukpati.service.Services;
 
-public class MainActivity extends ActionBarActivity {
+import retrofit.RestAdapter;
+
+
+public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,4 +36,11 @@ public class MainActivity extends ActionBarActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+    /*private void loadData() {
+        RestAdapter restAdapter = new RestAdapter.Builder().setEndpoint(Statis.BASE_URL).build();
+        Services services = restAdapter.create(Services.class);
+
+        services.getUser();
+    }*/
 }
