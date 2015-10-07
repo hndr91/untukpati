@@ -49,6 +49,7 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
+    //TODO return null
     private void getAllType() {
         try {
             typeService.getAllTypes(new Callback() {
