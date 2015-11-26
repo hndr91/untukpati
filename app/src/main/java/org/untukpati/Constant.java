@@ -6,11 +6,9 @@ package org.untukpati;
 public class Constant {
 
     //API Region
-    public static final String BASE_URL = "http://10.118.85.101/untukpatislim/v1";
-    public static final String GET_TYPE = "/type";
-    public static final String GET_DISTRICT = "/district";
-    public static final String GET_ALL_SERVICES = "/services";
-    public static final String GET_SERVICES_TYPE = "/servicestype/";
-    public static final String GET_DISTRICT_SERVICES = "/districtservices/";
+    public static final String BASE_URL = "http://untukpati.karia.id/v1/";
+    public static final String GET_TYPE = BASE_URL + "type";
+    public static final String GET_DISTRICT = BASE_URL + "district";
+    public static final String GET_ALL_SERVICES = BASE_URL + "services";
 
 }
